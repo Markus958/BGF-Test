@@ -68,23 +68,30 @@ footer {
     max-width: 300px;
   }
 }
-/* Akzentfarbe: dezentes warmes Orange */
+/* Akzentfarbe – Wahlseite */
 :root {
-  --accent: #b36a3e;
+  --accent: #b36a3e; /* gedämpftes, neutrales Orange */
 }
 
-/* Überschriften */
+/* Haupttitel */
+h1 {
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+
+/* Untertitel bleibt bewusst neutral */
+.subtitle {
+  color: #555;
+}
+
+/* Abschnittsüberschriften */
 h2 {
   color: var(--accent);
 }
 
-/* Über-mich-Link im Hero */
+/* Über-mich-Link */
 .ueber-mich-link a {
   color: var(--accent);
-}
-
-.ueber-mich-link a:hover {
-  text-decoration: underline;
 }
 
 /* Footer-Link */
@@ -92,9 +99,8 @@ footer a {
   color: var(--accent);
 }
 
-/* Feine Linie unter dem Header */
+/* Feine Linie unter Header */
 header {
-  border-bottom: 1px solid #e5e0dc;
+  border-bottom: 2px solid var(--accent);
   padding-bottom: 1rem;
 }
-
