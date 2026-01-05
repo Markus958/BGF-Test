@@ -1,1 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Header */
+header {
+  margin-bottom: 2.5rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-top: 0.25rem;
+}
+
+nav {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/* Main */
+main h2 {
+  margin-top: 0;
+}
 
