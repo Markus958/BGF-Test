@@ -108,3 +108,6 @@ header {
 a:hover {
   color: #8f4f2e; /* dunkleres Terrakotta */
 }
+.zurueck-link {
+  margin-top: 3.5rem;
+}
