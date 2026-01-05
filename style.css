@@ -104,3 +104,7 @@ header {
   border-bottom: 2px solid var(--accent);
   padding-bottom: 1rem;
 }
+/* Hover: Akzentfarbe leicht abdunkeln */
+a:hover {
+  color: #8f4f2e; /* dunkleres Terrakotta */
+}
