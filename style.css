@@ -33,4 +33,39 @@ footer {
   color: #666;
   border-top: 1px solid #ddd;
 }
+/* Hero-Bereich */
+.hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  width: 220px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.hero-text p {
+  margin-top: 0;
+}
+
+/* Schwerpunkte */
+.focus {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 
