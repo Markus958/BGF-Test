@@ -111,3 +111,16 @@ a:hover {
 .zurueck-link {
   margin-top: 3.5rem;
 }
+.cv-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cv-list li {
+  margin-bottom: 0.4rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
