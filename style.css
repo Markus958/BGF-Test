@@ -7,32 +7,65 @@ body {
   color: #222;
 }
 
+/* Akzentfarbe – dezent (Die Mitte) */
+:root {
+  --accent: #b36a3e;      /* gedämpftes Orange */
+  --accent-dark: #8f4f2e; /* dunkler für Hover */
+}
+
 /* Header */
 header {
   margin-bottom: 2.5rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 1rem;
+}
+
+h1 {
+  color: var(--accent);
+  margin-bottom: 0.2rem;
 }
 
 .subtitle {
-  color: #555;
+  color: #666;
   margin-top: 0.25rem;
+  margin-bottom: 2rem;
 }
 
-nav {
+/* Navigation */
+.main-nav {
   margin-top: 1rem;
-  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Main */
 main h2 {
   margin-top: 0;
+  color: var(--accent);
 }
-footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
+
+/* Links allgemein */
+a {
+  color: #333;
 }
+
+a:hover {
+  color: var(--accent-dark);
+}
+
 /* Hero-Bereich */
 .hero {
   display: flex;
@@ -51,10 +84,32 @@ footer {
   margin-top: 0;
 }
 
-/* Schwerpunkte */
-.focus {
-  list-style-type: disc;
-  padding-left: 1.2rem;
+/* Über-mich-Link auf Startseite */
+.ueber-mich-link a {
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+footer a {
+  color: var(--accent);
+}
+
+/* CV / Listen */
+.cv-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.cv-list li {
+  margin-bottom: 0.4rem;
 }
 
 /* Mobile */
@@ -67,79 +122,4 @@ footer {
     width: 100%;
     max-width: 300px;
   }
-}
-/* Akzentfarbe – Wahlseite */
-:root {
-  --accent: #b36a3e; /* gedämpftes, neutrales Orange */
-}
-
-/* Haupttitel */
-h1 {
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-}
-
-/* Untertitel bleibt bewusst neutral */
-.subtitle {
-  color: #555;
-}
-
-/* Abschnittsüberschriften */
-h2 {
-  color: var(--accent);
-}
-
-/* Über-mich-Link */
-.ueber-mich-link a {
-  color: var(--accent);
-}
-
-/* Footer-Link */
-footer a {
-  color: var(--accent);
-}
-
-/* Feine Linie unter Header */
-header {
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 1rem;
-}
-/* Hover: Akzentfarbe leicht abdunkeln */
-a:hover {
-  color: #8f4f2e; /* dunkleres Terrakotta */
-}
-.zurueck-link {
-  margin-top: 3.5rem;
-}
-.cv-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.cv-list li {
-  margin-bottom: 0.4rem;
-}
-
-.subtitle {
-  color: #666;
-  margin-bottom: 2rem;
-}
-/* Hauptnavigation */
-
-.main-nav {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
 }
