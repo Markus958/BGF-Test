@@ -1,154 +1,29 @@
-body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 1rem;
-  line-height: 1.6;
-  color: #222;
-}
-
-/* Akzentfarbe – dezent (Die Mitte) */
-:root {
-  --accent: #b36a3e;      /* gedämpftes Orange */
-  --accent-dark: #8f4f2e; /* dunkler für Hover */
-}
-
-/* Header */
-header {
-  margin-bottom: 2.5rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 1rem;
-}
-
-h1 {
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-}
-
-.subtitle {
-  color: #666;
-  margin-top: 0.25rem;
-  margin-bottom: 2rem;
-}
-
-/* Navigation */
-.main-nav {
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-/* Main */
-main h2 {
-  margin-top: 0;
-  color: var(--accent);
-}
-
-/* Links allgemein */
-a {
-  color: #333;
-}
-
-a:hover {
-  color: var(--accent-dark);
-}
-
-/* Hero-Bereich */
-.hero {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-bottom: 3rem;
-}
-
-.hero img {
-  width: 220px;
-  height: auto;
-  border-radius: 4px;
-}
-
-.hero-text p {
-  margin-top: 0;
-}
-
-/* Über-mich-Link auf Startseite */
-.ueber-mich-link a {
-  color: var(--accent);
-}
-
-/* Footer */
-footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
-}
-
-footer a {
-  color: var(--accent);
-}
-
-/* CV / Listen */
-.cv-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.cv-list li {
-  margin-bottom: 0.4rem;
-}
-
-/* Mobile */
-@media (max-width: 700px) {
-  .hero {
-    flex-direction: column;
-  }
-
-  .hero img {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-/* Lebenslauf – saubere Jahresausrichtung */
+/* Lebenslauf – saubere Zweispalten-Ausrichtung */
 
 .cv {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  row-gap: 0.6rem;
+  column-gap: 1rem;
   margin-left: 0;
 }
 
 .cv dt {
-  float: left;
-  width: 6.5rem;
   font-weight: bold;
   color: #555;
 }
 
 .cv dd {
-  margin-left: 7rem;
-  margin-bottom: 0.8rem;
+  margin: 0;
 }
 
+/* Mobile: einspaltig */
 @media (max-width: 700px) {
-  .cv dt {
-    float: none;
-    width: auto;
+  .cv {
+    grid-template-columns: 1fr;
   }
 
-  .cv dd {
-    margin-left: 0;
+  .cv dt {
+    margin-top: 0.8rem;
   }
 }
-
