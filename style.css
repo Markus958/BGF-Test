@@ -40,6 +40,17 @@ h1 {
   margin-bottom: 0.2rem;
 }
 
+/* >>> KORREKTUR: alle Titel konsistent in Akzentfarbe <<< */
+
+h2,
+h3 {
+  color: var(--accent);
+}
+
+/* =====================================================
+   Subtitle
+   ===================================================== */
+
 .subtitle {
   color: #666;
   margin-top: 0.25rem;
@@ -104,16 +115,6 @@ a:hover {
 
 .hero h2 {
   margin-top: 0;
-  color: var(--accent);
-}
-
-.ueber-mich-link {
-  margin-top: 1.5rem;
-}
-
-.ueber-mich-link a {
-  color: var(--accent);
-  font-weight: 500;
 }
 
 /* =====================================================
@@ -179,6 +180,11 @@ footer a {
     width: 180px;
   }
 }
+
+/* =====================================================
+   Einheitliche Breite Header & Footer
+   ===================================================== */
+
 header,
 footer {
   max-width: 800px;
