@@ -145,8 +145,8 @@ a:hover {
 
 .cv {
   display: grid;
-  grid-template-columns: 8rem 1fr;
-  column-gap: 1.2rem;
+  grid-template-columns: 10rem 1fr; /* mehr Platz für dt */
+  column-gap: 1.8rem;               /* klarer Abstand */
   row-gap: 0.6rem;
   margin: 0;
 }
@@ -158,6 +158,7 @@ a:hover {
 .cv dd {
   margin: 0;
 }
+
 
 /* =====================================================
    Footer
