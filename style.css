@@ -3,8 +3,9 @@
    ===================================================== */
 
 :root {
-  --accent: #b36a3e;
-  --accent-dark: #8f4f2e;
+  --accent: #2f6f73;       /* warmes Petrol */
+  --accent-dark: #1f565a;  /* etwas kräftiger für Hover */
+  --accent-soft: #e6f0f1;  /* sehr dezenter Hintergrund */
 }
 
 body {
@@ -28,25 +29,16 @@ footer {
 }
 
 /* =====================================================
-   Header-Struktur
+   Header
    ===================================================== */
 
 header {
   margin-bottom: 2rem;
-}
-
-/* Titel + Strich */
-.header-top {
   border-bottom: 2px solid var(--accent);
   padding-bottom: 1rem;
-  margin-bottom: 1.2rem;
 }
 
-h1 {
-  color: var(--accent);
-  margin-bottom: 0.2rem;
-}
-
+h1,
 h2 {
   color: var(--accent);
 }
@@ -62,6 +54,8 @@ h2 {
    ===================================================== */
 
 .main-nav {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -71,23 +65,38 @@ h2 {
   color: #333;
   text-decoration: none;
   font-weight: 500;
+  position: relative;
 }
 
+/* feiner Hover-Akzent */
 .main-nav a:hover {
   color: var(--accent-dark);
-  text-decoration: underline;
 }
 
 /* =====================================================
-   Links allgemein
+   Links & CTA
    ===================================================== */
 
 a {
-  color: #333;
+  color: var(--accent);
+  text-decoration: none;
 }
 
 a:hover {
   color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+/* Call-to-action Links (z. B. Startseite) */
+.ueber-mich-link a {
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+}
+
+.ueber-mich-link a:hover {
+  background-color: var(--accent-soft);
+  text-decoration: none;
 }
 
 /* =====================================================
@@ -98,7 +107,7 @@ a:hover {
   display: flex;
   gap: 2rem;
   align-items: flex-start;
-  margin-top: 2rem;     /* Abstand unter Header-Strich */
+  margin-top: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -110,19 +119,6 @@ a:hover {
 
 .hero-text p {
   margin-top: 0;
-}
-
-.hero h2 {
-  margin-top: 0;
-}
-
-.ueber-mich-link {
-  margin-top: 1.5rem;
-}
-
-.ueber-mich-link a {
-  color: var(--accent);
-  font-weight: 500;
 }
 
 /* =====================================================
@@ -144,7 +140,7 @@ a:hover {
 
 .cv {
   display: grid;
-  grid-template-columns: 10rem 1fr; /* mehr Platz für erste Spalte */
+  grid-template-columns: 10rem 1fr;
   column-gap: 1.8rem;
   row-gap: 0.6rem;
   margin: 0;
@@ -156,7 +152,7 @@ a:hover {
 
 .cv dd {
   margin: 0;
-  margin-bottom: 0.8rem; /* zusätzlicher Zeilenabstand */
+  margin-bottom: 0.8rem;
 }
 
 /* =====================================================
@@ -181,12 +177,10 @@ footer a {
 
 @media (max-width: 600px) {
 
-  /* Navigation: bessere Touch-Zonen */
   .main-nav {
     gap: 0.8rem;
   }
 
-  /* Hero: untereinander, etwas Luft */
   .hero {
     flex-direction: column;
     margin-top: 1.5rem;
@@ -196,7 +190,6 @@ footer a {
     width: 180px;
   }
 
-  /* Lebenslauf: einspaltig */
   .cv {
     grid-template-columns: 1fr;
   }
