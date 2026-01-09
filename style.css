@@ -3,9 +3,9 @@
    ===================================================== */
 
 :root {
-  --accent: #7a3b47;        /* gedämpftes Bordeaux */
-  --accent-dark: #5e2c35;   /* dunkler für Hover */
-  --accent-soft: #f2e8ea;   /* sehr dezenter Hintergrund */
+  --accent: #3f8f94;        /* helles Petrol */
+  --accent-dark: #2f6f73;   /* dunkler für Hover */
+  --accent-soft: #e9f4f5;   /* sehr dezenter Hintergrund */
 }
 
 body {
