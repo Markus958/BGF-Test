@@ -3,9 +3,9 @@
    ===================================================== */
 
 :root {
-  --accent: #2f6f73;       /* warmes Petrol */
-  --accent-dark: #1f565a;  /* etwas kräftiger für Hover */
-  --accent-soft: #e6f0f1;  /* sehr dezenter Hintergrund */
+  --accent: #444;        /* warmes Anthrazit */
+  --accent-dark: #222;   /* dunkler für Hover */
+  --accent-soft: #f2f2f2;/* sehr dezenter Hintergrund */
 }
 
 body {
@@ -65,12 +65,11 @@ h2 {
   color: #333;
   text-decoration: none;
   font-weight: 500;
-  position: relative;
 }
 
-/* feiner Hover-Akzent */
 .main-nav a:hover {
   color: var(--accent-dark);
+  text-decoration: underline;
 }
 
 /* =====================================================
@@ -87,7 +86,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Call-to-action Links (z. B. Startseite) */
+/* dezenter CTA (z. B. Startseite) */
 .ueber-mich-link a {
   display: inline-block;
   padding: 0.35rem 0.6rem;
