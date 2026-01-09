@@ -3,7 +3,7 @@
    ===================================================== */
 
 :root {
-  --accent: #b36a3e;      /* gedämpftes Orange */
+  --accent: #b36a3e;
   --accent-dark: #8f4f2e;
 }
 
@@ -47,17 +47,38 @@ h1 {
 }
 
 /* =====================================================
-   Links
+   Navigation
+   ===================================================== */
+
+.main-nav {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-nav a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+/* =====================================================
+   Links allgemein
    ===================================================== */
 
 a {
   color: #333;
-  text-decoration: none;
 }
 
 a:hover {
   color: var(--accent-dark);
-  text-decoration: underline;
 }
 
 /* =====================================================
@@ -81,38 +102,31 @@ a:hover {
   margin-top: 0;
 }
 
+.hero h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+
+.ueber-mich-link {
+  margin-top: 1.5rem;
+}
+
 .ueber-mich-link a {
   color: var(--accent);
   font-weight: 500;
 }
 
 /* =====================================================
-   Über mich
+   Über mich – reine Textseite
    ===================================================== */
 
-.about {
-  max-width: none; /* erlaubt volle Breite im unteren Teil */
+.about-text-only {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.about-top {
-  display: flex;
-  gap: 2.5rem;
-  align-items: flex-start;
-  margin-bottom: 2.5rem;
-}
-
-.about-image img {
-  width: 220px;
-  height: auto;
-  border-radius: 6px;
-}
-
-.about-intro {
-  flex: 1;
-}
-
-.about-main {
-  width: 100%;
+.about-text-only p {
+  margin-bottom: 1.4rem;
 }
 
 /* =====================================================
@@ -161,12 +175,7 @@ footer a {
     flex-direction: column;
   }
 
-  .about-top {
-    flex-direction: column;
-  }
-
-  .hero img,
-  .about-image img {
+  .hero img {
     width: 180px;
   }
 }
