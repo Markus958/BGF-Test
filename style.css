@@ -179,3 +179,9 @@ footer a {
     width: 180px;
   }
 }
+header,
+footer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
