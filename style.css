@@ -50,7 +50,13 @@ h2{ font-size:clamp(1.35rem,2.1vw,1.8rem); }
 h3{ font-size:clamp(1.2rem,1.7vw,1.5rem); }
 h4{ font-size:1.05rem; }
 
-main{ padding:1.5rem 1rem 2.5rem; }
+/* Main-Container wird wie Header zentriert, damit der linke Abstand
+   auf allen Seiten konsistent ist (nicht nur auf der Startseite). */
+main{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:1.5rem 1rem 2.5rem;
+}
 
 footer{
   border-top:1px solid var(--border);
