@@ -1,204 +1,343 @@
-/* =====================================================
-   Basis
-   ===================================================== */
+/* style.css
+   Basis: klar, gut lesbar, responsive, mit sauberen Fokus-Stilen
+*/
+
+/* ---------- Reset / Grundlayout ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 :root {
-  --accent: #3f8f94;        /* helles Petrol */
-  --accent-dark: #2f6f73;   /* dunkler für Hover */
-  --accent-soft: #e9f4f5;   /* sehr dezenter Hintergrund */
+  --bg: #ffffff;
+  --surface: #f6f7f9;
+  --text: #111827;
+  --muted: #4b5563;
+  --border: #e5e7eb;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  --accent: #1f4ed8;
+  --accent-hover: #163fb3;
+  --accent-soft: rgba(31, 78, 216, 0.08);
+
+  --radius: 14px;
+  --radius-sm: 10px;
+
+  --maxw: 1100px;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 3rem 0;
-  padding: 0;
-  line-height: 1.6;
-  color: #222;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
 }
 
-/* =====================================================
-   Zentrale Inhaltsbreite
-   ===================================================== */
-
-header,
-main,
-footer {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 1rem;
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
-
-/* =====================================================
-   Header
-   ===================================================== */
-
-header {
-  margin-bottom: 2rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 1rem;
-}
-
-h1,
-h2 {
-  color: var(--accent);
-}
-
-.subtitle {
-  color: var(--accent);
-  margin-top: 0.25rem;
-  margin-bottom: 0;
-}
-
-
-/* =====================================================
-   Navigation
-   ===================================================== */
-
-.main-nav {
-  margin-top: 1.2rem;
-  margin-bottom: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.main-nav a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  color: var(--accent-dark);
-  text-decoration: underline;
-}
-
-/* =====================================================
-   Links & CTA
-   ===================================================== */
 
 a {
-  color: var(--accent);
-  text-decoration: none;
+  color: inherit;
 }
 
-a:hover {
-  color: var(--accent-dark);
-  text-decoration: underline;
+p {
+  margin: 0 0 1rem 0;
 }
 
-/* dezenter CTA (z. B. Startseite) */
-.ueber-mich-link a {
-  display: inline-block;
-  padding: 0.35rem 0.6rem;
-  border-radius: 4px;
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  margin: 0 0 0.75rem 0;
 }
 
-.ueber-mich-link a:hover {
-  background-color: var(--accent-soft);
-  text-decoration: none;
+h1 { font-size: clamp(1.6rem, 2.5vw, 2rem); }
+h2 { font-size: clamp(1.35rem, 2.1vw, 1.8rem); }
+h3 { font-size: clamp(1.2rem, 1.7vw, 1.5rem); }
+h4 { font-size: 1.05rem; }
+
+main {
+  padding: 1.5rem 1rem 2.5rem;
 }
-
-/* =====================================================
-   Startseite – Hero
-   ===================================================== */
-
-.hero {
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-.hero img {
-  width: 220px;
-  height: auto;
-  border-radius: 6px;
-}
-
-.hero-text p {
-  margin-top: 0;
-}
-
-/* =====================================================
-   Über mich – Textseite
-   ===================================================== */
-
-.about-text-only {
-  max-width: 100%;
-  margin: 0;
-}
-
-.about-text-only p {
-  margin-bottom: 1.4rem;
-}
-
-/* =====================================================
-   Lebenslauf
-   ===================================================== */
-
-.cv {
-  display: grid;
-  grid-template-columns: 10rem 1fr;
-  column-gap: 1.8rem;
-  row-gap: 0.6rem;
-  margin: 0;
-}
-
-.cv dt {
-  font-weight: bold;
-}
-
-.cv dd {
-  margin: 0;
-  margin-bottom: 0.8rem;
-}
-
-/* =====================================================
-   Footer
-   ===================================================== */
 
 footer {
-  margin-top: 4rem;
-  padding-top: 1.5rem;
-  font-size: 0.9rem;
-  color: #666;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border);
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 footer a {
-  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+footer a:hover {
+  border-bottom-color: var(--muted);
 }
 
-/* =====================================================
-   Responsive / Mobile
-   ===================================================== */
+/* ---------- Skip-Link (A11y) ---------- */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
 
-@media (max-width: 600px) {
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 0.6rem 0.8rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  z-index: 9999;
+}
 
-  .main-nav {
-    gap: 0.8rem;
-  }
+/* ---------- Fokus-Stile (A11y) ---------- */
+:focus-visible {
+  outline: 3px solid rgba(31, 78, 216, 0.35);
+  outline-offset: 3px;
+}
 
+/* ---------- Header / Navigation ---------- */
+header {
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.header-top {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.2rem 1rem 0.75rem;
+}
+
+.subtitle {
+  margin: 0.15rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.main-nav {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.75rem 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.main-nav a:hover {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.main-nav a[aria-current="page"] {
+  background: var(--accent-soft);
+  color: var(--text);
+  border-color: rgba(31, 78, 216, 0.25);
+}
+
+/* ---------- Layout-Container (ohne extra Wrapper im HTML) ---------- */
+.hero,
+.positions {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding-top: 1rem;
+}
+
+.hero img {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.hero-text {
+  padding: 0.25rem 0;
+}
+
+.quick-summary {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.quick-summary ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.quick-summary li {
+  margin: 0.25rem 0;
+  color: var(--text);
+}
+
+/* ---------- Buttons / Links ---------- */
+.hero-actions {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.65rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+
+.button:hover {
+  background: var(--surface);
+}
+
+.button.primary {
+  background: var(--accent);
+  border-color: rgba(0, 0, 0, 0.05);
+  color: #ffffff;
+}
+
+.button.primary:hover {
+  background: var(--accent-hover);
+}
+
+.text-link {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+
+.text-link:hover {
+  border-bottom-color: rgba(31, 78, 216, 0.5);
+}
+
+/* Fallback für alte Klasse, falls noch in anderen Seiten */
+.ueber-mich-link a {
+  text-decoration: none;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ---------- Positionen-Sektion ---------- */
+.positions {
+  margin-top: 2.25rem;
+  padding: 1.5rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.positions-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 1rem;
+}
+
+.position-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.position-card p {
+  color: var(--muted);
+}
+
+.positions-cta {
+  margin-top: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
   .hero {
-    flex-direction: column;
-    margin-top: 1.5rem;
+    grid-template-columns: 260px 1fr;
   }
-
-  .hero img {
-    width: 180px;
+  .positions-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .cv {
+@media (max-width: 700px) {
+  .hero {
     grid-template-columns: 1fr;
   }
 
-  .cv dt {
-    margin-top: 1rem;
+  .hero img {
+    max-width: 420px;
   }
 
-  .cv dd {
-    margin-bottom: 1rem;
+  .main-nav {
+    gap: 0.25rem;
+  }
+
+  .positions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .positions {
+    padding: 1.25rem 0.9rem;
+  }
+}
+
+/* ---------- Print (optional, hilfreich für “auf einen Blick”) ---------- */
+@media print {
+  header, footer, .main-nav, .skip-link {
+    display: none !important;
+  }
+  body {
+    color: #000;
+  }
+  .positions, .quick-summary, .position-card {
+    box-shadow: none !important;
   }
 }
