@@ -2,8 +2,18 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Über mich – Francesca Brignoli Lutz</title>
+
+  <title>Über mich | Francesca Brignoli Lutz</title>
+  <meta name="description" content="Haltung, Erfahrung und Verantwortung: Francesca Brignoli Lutz über Führung, Zusammenarbeit und ihre Rolle im Schulzweckverband Bezirk Affoltern.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph (Share-Vorschau) -->
+  <meta property="og:site_name" content="Francesca Brignoli Lutz">
+  <meta property="og:title" content="Über mich | Francesca Brignoli Lutz">
+  <meta property="og:description" content="Haltung, Erfahrung und Verantwortung – kurz und verständlich eingeordnet.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/portrait.jpg">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- GoatCounter -->
@@ -12,61 +22,72 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Direkt zum Inhalt</a>
 
-<header>
-  <div class="header-top">
-    <h1>Über mich</h1>
-    <p class="subtitle">Haltung, Erfahrung und Verantwortung</p>
-  </div>
+  <header>
+    <div class="header-top">
+      <h1>Über mich</h1>
+      <p class="subtitle">Haltung, Erfahrung und Verantwortung</p>
+    </div>
 
-  <nav class="main-nav">
-    <a href="index.html">Start</a>
-    <a href="ueber-mich.html">Über mich</a>
-    <a href="praesidium.html">Präsidium</a>
-    <a href="herausforderungen.html">Herausforderungen</a>
-    <a href="raumfrage.html">Raumfrage</a>
-    <a href="ausblick.html">Ausblick</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="ueber-mich.html" aria-current="page">Über mich</a>
+      <a href="praesidium.html">Präsidium</a>
+      <a href="herausforderungen.html">Herausforderungen</a>
+      <a href="raumfrage.html">Raumfrage</a>
+      <a href="ausblick.html">Ausblick</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
-<main>
-  <section>
+  <main id="main-content">
+    <section class="content">
+      <!-- Kurzbox für Scanbarkeit -->
+      <div class="quick-summary" aria-label="Kurzüberblick">
+        <ul>
+          <li>Bildung als gemeinsame Verantwortung von Fachpersonen, Eltern, Behörden und Gemeinden</li>
+          <li>Führung mit Klarheit, Verlässlichkeit und Raum für Zusammenarbeit</li>
+          <li>Strategische Erfahrung im Schulzweckverband und in komplexen Bildungsorganisationen</li>
+        </ul>
+      </div>
 
-    <p>
-      Bildung ist für mich mehr als Organisation und Verwaltung. Sie ist eine gemeinsame
-      gesellschaftliche Aufgabe – getragen von Fachpersonen, Eltern, Behörden und Gemeinden.
-      Gute Bildung entsteht dort, wo Verantwortung übernommen wird, wo Klarheit herrscht
-      und wo Entscheidungen verlässlich umgesetzt werden.
-    </p>
+      <p>
+        Bildung ist für mich mehr als Organisation und Verwaltung. Sie ist eine gemeinsame
+        gesellschaftliche Aufgabe – getragen von Fachpersonen, Eltern, Behörden und Gemeinden.
+        Gute Bildung entsteht dort, wo Verantwortung übernommen wird, wo Klarheit herrscht
+        und wo Entscheidungen verlässlich umgesetzt werden.
+      </p>
 
-    <p>
-      Seit 2022 bin ich Mitglied der Verbandsschulpflege des Schulzweckverbands Bezirk Affoltern,
-      seit Juni 2025 deren Präsidentin. In dieser Funktion trage ich die strategische Verantwortung
-      für die Weiterentwicklung des Verbands und für eine konstruktive Zusammenarbeit zwischen
-      den beteiligten Gemeinden.
-    </p>
+      <!-- Rollen/Timeline klarer: Präsidentin + Kandidatur sauber einordnen -->
+      <p>
+        Seit 2022 bin ich Mitglied der Verbandsschulpflege des Schulzweckverbands Bezirk Affoltern,
+        seit Juni 2025 deren Präsidentin. Als Präsidentin trage ich die strategische Verantwortung
+        für die Weiterentwicklung des Verbands und für eine konstruktive Zusammenarbeit zwischen
+        den beteiligten Gemeinden. Für die nächste Amtsperiode kandidiere ich, weil Kontinuität und
+        nachvollziehbare Führung in dieser Phase besonders wichtig sind.
+      </p>
 
-    <p>
-      Beruflich bewege ich mich seit vielen Jahren an der Schnittstelle von Führung,
-      Organisation und Bildung. Heute trage ich als Rektorin die Gesamtverantwortung
-      für komplexe Bildungsorganisationen mit unterschiedlichen Anspruchsgruppen.
-    </p>
+      <p>
+        Beruflich bewege ich mich seit vielen Jahren an der Schnittstelle von Führung,
+        Organisation und Bildung. Heute trage ich als Rektorin die Gesamtverantwortung
+        für komplexe Bildungsorganisationen mit unterschiedlichen Anspruchsgruppen.
+      </p>
 
-    <p>
-      Mein politisches Engagement ist bei <strong>Die Mitte</strong> verankert.
-    </p>
+      <p>
+        Mein politisches Engagement ist bei <strong>Die Mitte</strong> verankert.
+      </p>
 
-    <p>
-      <a href="lebenslauf.html">→ Zum Lebenslauf</a>
-    </p>
+      <!-- Klare CTAs -->
+      <div class="hero-actions" role="group" aria-label="Weiterführende Links">
+        <a class="button primary" href="lebenslauf.html">Lebenslauf ansehen</a>
+        <a class="button" href="kontakt.html">Kontakt aufnehmen</a>
+      </div>
+    </section>
+  </main>
 
-  </section>
-</main>
-
-<footer>
-  <p><a href="impressum.html">Impressum & Datenschutz</a></p>
-</footer>
-
+  <footer>
+    <p><a href="impressum.html">Impressum & Datenschutz</a></p>
+  </footer>
 </body>
 </html>
