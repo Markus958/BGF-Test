@@ -2,8 +2,18 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Lebenslauf – Francesca Brignoli Lutz</title>
+
+  <title>Lebenslauf | Francesca Brignoli Lutz</title>
+  <meta name="description" content="Lebenslauf von Francesca Brignoli Lutz: berufliche Erfahrung, Engagement sowie Aus- und Weiterbildungen.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Open Graph (Share-Vorschau) -->
+  <meta property="og:site_name" content="Francesca Brignoli Lutz">
+  <meta property="og:title" content="Lebenslauf | Francesca Brignoli Lutz">
+  <meta property="og:description" content="Berufliche Erfahrung, Engagement und Aus- und Weiterbildungen auf einen Blick.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/portrait.jpg">
+
   <link rel="stylesheet" href="style.css">
 
   <!-- GoatCounter -->
@@ -12,122 +22,165 @@
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Direkt zum Inhalt</a>
 
-<header>
-  <div class="header-top">
-    <h1>Lebenslauf</h1>
-    <p class="subtitle">Francesca Brignoli Lutz</p>
-  </div>
+  <header>
+    <div class="header-top">
+      <h1>Lebenslauf</h1>
+      <p class="subtitle">Francesca Brignoli Lutz</p>
+    </div>
 
-  <nav class="main-nav">
-    <a href="index.html">Start</a>
-    <a href="ueber-mich.html">Über mich</a>
-    <a href="praesidium.html">Präsidium</a>
-    <a href="herausforderungen.html">Herausforderungen</a>
-    <a href="raumfrage.html">Raumfrage</a>
-    <a href="ausblick.html">Ausblick</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
-</header>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html">Start</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="praesidium.html">Präsidium</a>
+      <a href="herausforderungen.html">Herausforderungen</a>
+      <a href="raumfrage.html">Raumfrage</a>
+      <a href="ausblick.html">Ausblick</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
-<main>
+  <main id="main-content">
+    <section class="content">
+      <div class="quick-summary" aria-label="Kurzüberblick">
+        <ul>
+          <li>Führungserfahrung in komplexen Bildungs- und Verwaltungsstrukturen</li>
+          <li>Engagement in Schulführung, Verbandsarbeit und Elternbildung</li>
+          <li>Aus- und Weiterbildungen in Schulführung und Public Management</li>
+        </ul>
+      </div>
 
-  <section>
-    <h2>Persönliche Angaben</h2>
-    <dl class="cv">
-      <dt>Name</dt><dd>Francesca Brignoli Lutz</dd>
-      <dt>Geboren</dt><dd>29. Juni 1962</dd>
-      <dt>Zivilstand</dt><dd>verheiratet</dd>
-      <dt>Kinder</dt><dd>vier erwachsene Söhne</dd>
-      <dt>Wohnort</dt><dd>Wettswil</dd>
-    </dl>
-  </section>
+      <section class="card">
+        <h2>Persönliche Angaben</h2>
 
-  <section>
-    <h2>Berufliche Erfahrung</h2>
+        <p class="note">
+          Die folgenden Angaben sind freiwillig und dienen der transparenten Einordnung meiner Person.
+          Für die Kontaktaufnahme oder die Nutzung dieser Website sind sie nicht erforderlich.
+        </p>
 
-    <dl class="cv">
-      <dt>Seit 2018</dt>
-      <dd><strong>Rektorin / Abteilungsleiterin Bildung & Kultur, Adligenswil</strong></dd>
+        <dl class="cv">
+          <dt>Name</dt><dd>Francesca Brignoli Lutz</dd>
 
-      <dt></dt>
-      <dd>
-        Operative Gesamtverantwortung für Schule, Musikschule, Schuldienste,
-        Schulsozialarbeit, Tagesstrukturen, Bibliothek und Schulverwaltung.
-      </dd>
-    </dl>
+          <!-- Datenschutzfreundlichere Option: nur Jahrgang statt exaktes Datum
+               <dt>Jahrgang</dt><dd>1962</dd>
+          -->
+          <dt>Geboren</dt><dd>29. Juni 1962 <span class="muted">(freiwillige Angabe)</span></dd>
 
-    <dl class="cv">
-      <dt>2014–2017</dt>
-      <dd><strong>Schulleiterin Primarschule Oberwil-Lieli</strong></dd>
+          <dt>Zivilstand</dt><dd>verheiratet <span class="muted">(freiwillige Angabe)</span></dd>
 
-      <dt>2004–2015</dt>
-      <dd><strong>Schulpräsidentin / Mitglied Schulpflege Wettswil</strong></dd>
+          <!-- Datenschutzfreundlichere Option: weniger spezifisch
+               <dt>Familie</dt><dd>Familie</dd>
+          -->
+          <dt>Kinder</dt><dd>vier erwachsene Söhne <span class="muted">(freiwillige Angabe)</span></dd>
 
-      <dt>1999–2013</dt>
-      <dd><strong>Mitinhaberin IS Solutions GmbH, Zürich</strong></dd>
+          <dt>Wohnort</dt><dd>Wettswil</dd>
+        </dl>
+      </section>
 
-      <dt>1997–1999</dt>
-      <dd><strong>Consultant und Projektleiterin, Comit Management Consulting</strong></dd>
+      <section class="card">
+        <h2>Berufliche Erfahrung</h2>
 
-      <dt>1996–1997</dt>
-      <dd><strong>Consultant, Projektleiterin und Dozentin, Spol AG</strong></dd>
+        <dl class="cv">
+          <dt>Seit 2018</dt>
+          <dd>
+            <strong>Rektorin / Abteilungsleiterin Bildung &amp; Kultur, Adligenswil</strong>
+            <div class="cv-impact">
+              Operative Gesamtverantwortung für Schule, Musikschule, Schuldienste,
+              Schulsozialarbeit, Tagesstrukturen, Bibliothek und Schulverwaltung.
+            </div>
+          </dd>
 
-      <dt>1985–1995</dt>
-      <dd><strong>Teamleiterin, Projektleiterin und Dozentin, Bank Leu AG</strong></dd>
-    </dl>
-  </section>
+          <dt>2014–2017</dt>
+          <dd>
+            <strong>Schulleiterin Primarschule Oberwil-Lieli</strong>
+            <div class="cv-impact">Führung der Schule, Personal- und Qualitätsentwicklung im Schulbetrieb.</div>
+          </dd>
 
-  <section>
-    <h2>Politisches und gesellschaftliches Engagement</h2>
-    <dl class="cv">
-      <dt>Schulzweckverband</dt>
-      <dd>Mitglied der Verbandsschulpflege seit 2022,<br>Präsidentin seit Juni 2025</dd>
+          <dt>2004–2015</dt>
+          <dd>
+            <strong>Schulpräsidentin / Mitglied Schulpflege Wettswil</strong>
+            <div class="cv-impact">Strategische Verantwortung, Behördenarbeit und Zusammenarbeit mit Anspruchsgruppen.</div>
+          </dd>
 
-      <dt>Partei</dt>
-      <dd>Mitglied Die Mitte, Ortsgruppe Wettswil</dd>
+          <dt>1999–2013</dt>
+          <dd>
+            <strong>Mitinhaberin IS Solutions GmbH, Zürich</strong>
+            <div class="cv-impact">Unternehmerische Verantwortung, Projekte und Organisationsentwicklung.</div>
+          </dd>
 
-      <dt>Wahlen</dt>
-      <dd>Kandidatur Kantonsrat Zürich, Bezirk Affoltern</dd>
+          <dt>1997–1999</dt>
+          <dd>
+            <strong>Consultant und Projektleiterin, Comit Management Consulting</strong>
+            <div class="cv-impact">Projektleitung und Beratung in Organisations- und Veränderungsvorhaben.</div>
+          </dd>
 
-      <dt>Jugend</dt>
-      <dd>Mitglied Jugendkommission Unteramt</dd>
+          <dt>1996–1997</dt>
+          <dd>
+            <strong>Consultant, Projektleiterin und Dozentin, Spol AG</strong>
+            <div class="cv-impact">Beratung, Projektarbeit und Weiterbildung/Schulung.</div>
+          </dd>
 
-      <dt>Initiativen</dt>
-      <dd>Initiantin «Elternbildungsmorgen Unteramt»</dd>
+          <dt>1985–1995</dt>
+          <dd>
+            <strong>Teamleiterin, Projektleiterin und Dozentin, Bank Leu AG</strong>
+            <div class="cv-impact">Führung, Projektverantwortung und Ausbildung in einem regulierten Umfeld.</div>
+          </dd>
+        </dl>
+      </section>
 
-      <dt>Prüfung</dt>
-      <dd>Prüfungsexpertin HFP eidg. dipl. Organisatoren</dd>
-    </dl>
-  </section>
+      <section class="card">
+        <h2>Politisches und gesellschaftliches Engagement</h2>
 
-  <section>
-    <h2>Aus- und Weiterbildung</h2>
-    <dl class="cv">
-      <dt>2022</dt><dd>DAS Schulleiterin EDK, Pädagogische Hochschule Luzern</dd>
-      <dt>2021</dt><dd>CAS Kooperative Schulführung, PH Luzern</dd>
-      <dt>2013</dt><dd>MAS Public Management, Hochschule Luzern</dd>
-      <dt>2011–2013</dt><dd>Studiengang MAS Public Management, HSLU Wirtschaft</dd>
-      <dt>2010</dt><dd>Ausbildnerin mit eidg. Fachausweis</dd>
-      <dt>2009–2010</dt><dd>SVEB 2, EB Zürich</dd>
-      <dt>2007–2008</dt><dd>SVEB 1, EB Zürich (Elternbildung)</dd>
-      <dt>1993</dt><dd>Sprachaufenthalt USA</dd>
-      <dt>1991</dt><dd>eidg. dipl. Organisatorin HFP</dd>
-      <dt>1989</dt><dd>Organisatorin mit eidg. Fachausweis</dd>
-      <dt>1985–1986</dt><dd>Analytikerin / Programmiererin, Bank Leu AG</dd>
-      <dt>1985</dt><dd>eidg. dipl. Kaufmann des Detailhandels HFP</dd>
-    </dl>
-  </section>
+        <dl class="cv">
+          <dt>Schulzweckverband</dt>
+          <dd>Mitglied der Verbandsschulpflege seit 2022,<br>Präsidentin seit Juni 2025</dd>
 
-  <p style="margin-top:3rem;">
-    <a href="ueber-mich.html">← Zurück zu «Über mich»</a>
-  </p>
+          <dt>Partei</dt>
+          <dd>Mitglied Die Mitte, Ortsgruppe Wettswil</dd>
 
-</main>
+          <dt>Wahlen</dt>
+          <dd>Kandidatur Kantonsrat Zürich, Bezirk Affoltern</dd>
 
-<footer>
-  <p><a href="impressum.html">Impressum & Datenschutz</a></p>
-</footer>
+          <dt>Jugend</dt>
+          <dd>Mitglied Jugendkommission Unteramt</dd>
 
+          <dt>Initiativen</dt>
+          <dd>Initiantin «Elternbildungsmorgen Unteramt»</dd>
+
+          <dt>Prüfung</dt>
+          <dd>Prüfungsexpertin HFP eidg. dipl. Organisatoren</dd>
+        </dl>
+      </section>
+
+      <section class="card">
+        <h2>Aus- und Weiterbildung</h2>
+
+        <dl class="cv">
+          <dt>2022</dt><dd>DAS Schulleiterin EDK, Pädagogische Hochschule Luzern</dd>
+          <dt>2021</dt><dd>CAS Kooperative Schulführung, PH Luzern</dd>
+          <dt>2013</dt><dd>MAS Public Management, Hochschule Luzern</dd>
+          <dt>2011–2013</dt><dd>Studiengang MAS Public Management, HSLU Wirtschaft</dd>
+          <dt>2010</dt><dd>Ausbildnerin mit eidg. Fachausweis</dd>
+          <dt>2009–2010</dt><dd>SVEB 2, EB Zürich</dd>
+          <dt>2007–2008</dt><dd>SVEB 1, EB Zürich (Elternbildung)</dd>
+          <dt>1993</dt><dd>Sprachaufenthalt USA</dd>
+          <dt>1991</dt><dd>eidg. dipl. Organisatorin HFP</dd>
+          <dt>1989</dt><dd>Organisatorin mit eidg. Fachausweis</dd>
+          <dt>1985–1986</dt><dd>Analytikerin / Programmiererin, Bank Leu AG</dd>
+          <dt>1985</dt><dd>eidg. dipl. Kaufmann des Detailhandels HFP</dd>
+        </dl>
+      </section>
+
+      <div class="hero-actions" role="group" aria-label="Navigation">
+        <a class="button" href="ueber-mich.html">← Zurück zu «Über mich»</a>
+        <a class="button primary" href="kontakt.html">Kontakt aufnehmen</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><a href="impressum.html">Impressum &amp; Datenschutz</a></p>
+  </footer>
 </body>
 </html>
