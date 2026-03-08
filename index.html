@@ -17,7 +17,8 @@
           async src="https://gc.zgo.at/count.js"></script>
 </head>
 
-<body>
+<body data-modus="kandidatur">
+  <!-- ↑ Bei Wahlsieg: "kandidatur" → "gewaehlt" ändern -->
   <a class="skip-link" href="#main-content">Direkt zum Inhalt</a>
 
   <header>
@@ -38,7 +39,24 @@
   </header>
 
   <main id="main-content">
-    <section class="hero">
+
+    <!-- DANKES-HERO (sichtbar wenn data-modus="gewaehlt") -->
+    <section class="hero hero-dank">
+      <img src="images/portrait.jpg" alt="Porträt von Francesca Brignoli Lutz" loading="lazy" decoding="async">
+      <div class="hero-text">
+        <h2>Herzlichen Dank für das Vertrauen!</h2>
+        <p>Ich freue mich sehr und bin tief berührt vom Vertrauen, das Sie mir entgegengebracht haben. Die Wiederwahl bedeutet mir viel – sie ist Auftrag und Ermutigung zugleich, die Arbeit für den Schulzweckverband Bezirk Affoltern mit vollem Engagement fortzuführen.</p>
+        <p>Gemeinsam werden wir die wichtigen Themen anpacken: die Raumfrage lösen, die Rahmenbedingungen für unsere Lehrpersonen stärken und das Wohl der Kinder konsequent ins Zentrum stellen.</p>
+        <p>Herzlichen Dank – ich freue mich auf die Zusammenarbeit.</p>
+        <div class="hero-actions" role="group" aria-label="Schnellzugriff">
+          <a class="button primary" href="ausblick.html">Ausblick</a>
+          <a class="button" href="praesidium.html">Zur Schulpflege</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- KANDIDATUR-HERO (sichtbar wenn data-modus="kandidatur") -->
+    <section class="hero hero-kandidatur">
       <img src="images/portrait.jpg" alt="Porträt von Francesca Brignoli Lutz" loading="lazy" decoding="async">
 
       <div class="hero-text">

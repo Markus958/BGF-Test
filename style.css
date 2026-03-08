@@ -302,6 +302,11 @@ dl.cv dd{ margin:0; color:var(--text); }
   dl.cv dt{ margin-top:.6rem; }
 }
 
+/* ---------- Modus-Steuerung (Kandidatur / Gewählt) ---------- */
+.hero-dank { display: none; }
+body[data-modus="gewaehlt"] .hero-dank { display: grid; }
+body[data-modus="gewaehlt"] .hero-kandidatur { display: none; }
+
 /* ---------- Print ---------- */
 @media print{
   header,footer,.main-nav,.skip-link{ display:none !important; }
